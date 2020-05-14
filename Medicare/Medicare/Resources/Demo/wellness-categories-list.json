@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "フリーマガジン",
+        "media": [
+            {
+                "id": 1,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_149.png",
+                "url": "https://www.google.com/"
+            },
+            {
+                "id": 2,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_149.png",
+                "url": "https://www.google.com/"
+            },
+            {
+                "id": 3,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_149.png",
+                "url": "https://www.google.com/"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "動画",
+        "media": [
+            {
+                "id": 1,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_149.png",
+                "url": "https://www.google.com/"
+            },
+            {
+                "id": 2,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_149.png",
+                "url": "https://www.google.com/"
+            },
+            {
+                "id": 3,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_149.png",
+                "url": "https://www.google.com/"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "プレゼント",
+        "media": [
+            {
+                "id": 1,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_115.png",
+                "url": "https://www.google.com/"
+            },
+            {
+                "id": 2,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_115.png",
+                "url": "https://www.google.com/"
+            },
+            {
+                "id": 3,
+                "name": "タイトルが入ります。タイトルイト",
+                "imageUrl": "http://mdcare.tk/images/Rectangle_115.png",
+                "url": "https://www.google.com/"
+            }
+        ]
+    }
+]

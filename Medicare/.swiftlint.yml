@@ -1,0 +1,59 @@
+disabled_rules: # rule identifiers to exclude from running
+  - variable_name
+  - nesting
+  - function_parameter_count
+opt_in_rules: # some rules are only opt-in
+  - control_statement
+  - empty_count
+  - trailing_newline
+  - colon
+  - comma
+
+included: # paths to include during linting. `--path` is ignored if present.
+  - Medicare
+  - OneSignalNotificationServiceExtension
+  - MedicareWidget
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - ./Pods
+  - ./Medicare/Medicare/Resources/File/R.generated.swift
+  - Medicare/Resources/File/R.generated.swift
+  - ./Medicare/MedicareWidget/Resources/File/R.generated.swift
+  - MedicareWidget/Resources/File/R.generated.swift
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly. Give warning only for force casting
+
+force_try:
+  severity: warning # explicitly. Give warning only for force try
+
+line_length:
+  warning: 120
+  ignores_function_declarations: false
+  ignores_comments: true
+  ignores_interpolated_strings: false
+  ignores_urls: true
+
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+# or they can set both explicitly
+file_length:
+  warning: 800
+  error: 1000
+
+large_tuple: # warn user when using 3 values in tuple, give error if there are 4
+   - 3
+   - 4
+
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 45
+    error: 50
+  excluded: iPhone # excluded via string
+
+reporter: "xcode"

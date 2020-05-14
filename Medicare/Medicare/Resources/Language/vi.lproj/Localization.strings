@@ -1,0 +1,31 @@
+/* 
+  Localization.strings
+  Medicare
+
+  Created by sanghv on 3/12/19.
+*/
+
+// MARK: - Common
+
+// MARK: - API Handler
+
+"Network.Error.Offline.Msg"         = "Connection error. Please try again.";
+"Network.Error.Server.Msg"          = "Server process error. Please try again.";
+"Network.Error.Unauthorized.Msg"    = "Unauthorized error.";
+"Network.Error.Session.Expired"     = "Please re-sign in.";
+"Session.Expired.Title"             = "Session expired";
+"Network.Error.Lost.Internet"       = "Please check your internet connection and try again.";
+
+// MARK: - Common
+
+"Button.Ok.Title"                   = "OK";
+"Button.Cancel.Title"               = "Hủy";
+"Button.Done.Title"                 = "Done";
+"Button.No.Title"                   = "No";
+"Button.Yes.Title"                  = "Yes";
+
+// Start up
+
+// TabBar
+
+"Home"      = "Trang chủ";

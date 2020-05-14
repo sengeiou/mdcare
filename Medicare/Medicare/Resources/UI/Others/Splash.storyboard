@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5in-Xo-I2c">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="BBj-mF-sT0">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="5in-Xo-I2c" customClass="SplashViewController" customModule="めりぃさん" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XoE-8e-7J9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="A4s-n4-8u0">
+                                <rect key="frame" x="46.5" y="190" width="282" height="287"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A4s-n4-8u0" secondAttribute="height" multiplier="282:287" id="A8i-9j-m0H"/>
+                                    <constraint firstAttribute="width" constant="282" id="D1U-Pi-8j6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="A4s-n4-8u0" firstAttribute="centerY" secondItem="a9A-DC-35h" secondAttribute="centerY" id="Kwv-DN-4BJ"/>
+                            <constraint firstItem="A4s-n4-8u0" firstAttribute="centerX" secondItem="a9A-DC-35h" secondAttribute="centerX" id="ymx-cz-gXK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a9A-DC-35h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MnO-Vp-Fbr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-244" y="148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_logo" width="283" height="288"/>
+    </resources>
+</document>

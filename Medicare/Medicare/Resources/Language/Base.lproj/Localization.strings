@@ -1,0 +1,281 @@
+/* 
+  Localization.strings
+  Medicare
+
+  Created by sanghv on 3/12/19.
+*/
+
+// MARK: - Common
+
+// MARK: - API Handler
+
+"Network.Error.Offline.Msg"         = "インターネット接続を確認してください。";
+"Network.Error.Server.Msg"          = "Server process error. Please try again.";
+"Network.Error.Unauthorized.Msg"    = "Unauthorized error.";
+"Network.Error.Session.Expired"     = "Please re-sign in.";
+"Session.Expired.Title"             = "Session expired";
+"Network.Error.Lost.Internet"       = "Please check your internet connection and try again.";
+"Timedout.Msg"                     = "サーバ内部で障害が発生しました。ご担当者にお問合せください。";
+
+// MARK: - Common
+
+"Button.Ok.Title"                   = "OK";
+"Button.Cancel.Title"               = "キャンセル";
+"Button.Done.Title"                 = "完了";
+"Button.No.Title"                   = "No";
+"Button.Yes.Title"                  = "Yes";
+"Return"                            = "戻る";
+"Close"                             = "閉じる";
+"Decide"                            = "決定";
+"Button.Back.Title"                 = "戻る";
+"Button.HomePage.Title"             = "ホーム";
+"Button.MyPage.Title"               = "マイページ";
+"Button.Begin.Title"                = "はじめる";
+"Button.GoHome.Title"               = "ホームへ";
+"Button.Like.Title"                 = "いいね";
+"Button.Favourite.Title"            = "お気に入り";
+
+// Start up
+
+// Account recovery
+
+"Account.Recovery.Completed"        = "アカウント復旧完了";
+"Top.Page"                          = "トップページへ";
+
+// Category setting
+
+"Category.Tag.Setting"              = "カテゴリー設定";
+"Please.Select.The.Category.You.Are.Interested.In" = "興味のあるカテゴリーを選択してください";
+"Select.Tags.Of.Interest"           = "興味のあるタグを選択してください";
+"Register"                          = "登録する";
+"Register.Later"                    = "あとで登録する";
+"Please.Select.A.Category"          = "カテゴリーを選択してください。";
+
+// Magazine Subscription
+
+"Introduction.To.Magazine.Subscription" = "マガジン定期購読のご紹介";
+"Introduction.Of.Subscription"          = "定期購読のご紹介";
+"Get.Started.In.As.Little.As.One.Minute"    = "最短1分で始められます！";
+"Register.Now.Using.The.Form.Below"     = "下記フォームからいますぐ登録";
+"Free"                                  = "無料";
+"Arrives.Monthly"                       = "で毎月届く";
+"Fullname"                              = "氏名";
+"Surname"                               = "姓";
+"Name"                                  = "名";
+"Required"                              = "必須";
+"Name.Kana"                             = "氏名(かな)";
+"Because"                               = "せい";
+"Niece"                                 = "めい";
+"Phone.Number"                          = "電話番号";
+"Street.Address"                        = "住所";
+"Example"                               = "例";
+"Post.Code.Search.Engine"               = "郵便番号検索";
+"Prefectures"                           = "都道府県";
+"Notes.On.Subscription"                 = "定期購読の注意事項について";
+"Notes.On.subscription.2"               = "定期購読の注意事項";
+"Agree.To.The.Above.And.Register"       = "上記内容に同意して登録する";
+"Welcome.Home"                          = "お帰りなさい";
+"Zipcode.Required.Characters"           = "郵便番号は%@文字でなければなりません";
+"Please.Input.In.Katakana"              = "カタカナで入力してください。";
+"Gender"                                = "性別";
+"Male"                                  = "男";
+"Female"                                = "女";
+"Please.Select.A.Gender"                = "性別を選択してください。";
+"Birthday"                              = "生年月日";
+"Please.Enter.Your.Date.Of.Birth"       = "生年月日を入力してください。";
+
+// Point
+
+"Point"                                 = "fift";
+"Current.Point.Balance"                 = "現在のポイント残高";
+"Point.Balance"                         = "ポイント残高";
+"Get.Points.From.Qr.Code"               = "QRコードからポイントを取得する";
+"Point.Acquisition.Use.History"         = "ポイント取得・利用履歴";
+
+// My Menu
+
+"My.Page"                               = "マイページ";
+"Point"                                 = "ポイント";
+"Change.User.Information"               = "ユーザー情報変更";
+"Notification.Settings"                 = "通知設定";
+"Data.Transfer"                         = "データ引継ぎ";
+"QR.Code.Reading"                       = "QRコード読み取り";
+"Frequently.Asked.Questions"            = "よくある質問";
+"Terms.Of.Service"                      = "利用規約";
+"Privacy.Policy"                        = "プライバシーポリシー";
+"Specified.Commercial.Transaction.Law"  = "特定商取引法に基づく表記";
+"Version.Information"                   = "バージョン情報";
+"Notice"                                = "お知らせ";
+"View.All"                              = "すべてを見る";
+"My.Menu"                               = "マイメニュー";
+"Logout.Title"                   = "ログアウト";
+"Logout.Message"                 = "ログアウトしますか？";
+"Logout.Cancel"                  = "いいえ";
+"Logout.Confirm"                 = "はい";
+
+// Data Transfer
+
+"Issue.Password"                        = "パスワードを発行する";
+
+// Password Generation
+
+"Password.Generation"                   = "パスワード発行";
+"Please.Copy.Or.Write.Down.Your.Password"   = "パスワードをコピーするかメモをお願いします";
+"Make.A.Copy"                           = "コピーする";
+"Back.To.My.Page"                       = "マイページに戻る";
+
+// Application Terms
+
+"Application.Terms"                     = "応募規約";
+
+// Present Application
+
+"Present.Application"                   = "プレゼント応募";
+"Apply.For.A.Present"                   = "プレゼントに応募する";
+"Agree.With"                            = "に同意して";
+"Questionnaire"                         = "アンケート";
+"Proceed.To.Confirmation.Screen"        = "確認画面へ進む";
+"Required.Field"                        = "必須フィールドに入力してください";
+"Required.Answer"                       = "答えを選択してください";
+"Confirmation.Of.Application.Contents"  = "応募内容のご確認";
+"Applicant.Failed"                      = "申請者は不合格";
+"This.Gift.Has.Already.Been.Applied"    = "このプレゼントはすでに適用されています";
+"Please.Answer.The.Questionnaire"       = "アンケートにお答えください。";
+
+// MARK: - Present Application Done
+
+"Application.Completed"                 = "応募完了";
+"Back.To.Home"                          = "ホームに戻る";
+"Return.To.The.Gift.List"               = "プレゼント一覧に戻る";
+
+// MARK: - Wellness
+
+"Wellness"                              = "ウェルネス";
+
+// MARK: - TabBar
+
+"TabBar.String.001"      = "マガジン";
+"TabBar.String.002"      = "プレゼント";
+"TabBar.String.003"      = "ウェルネス";
+"TabBar.String.004"      = "動画";
+
+// MARK: First screen
+
+"First.String.002"                  = "利用規約";
+"First.String.003"                  = "プライバシーポリシー";
+"First.String.004"                  = "に同意して";
+"First.String.005"                  = "新規登録";
+"First.String.006"                  = "アカウントをお持ちの方はこちら";
+"First.String.007"                  = "再入会される方は、新規登録ボタンで復旧できます";
+"First.String.RegisterNew"          = "初めての方はこちら";
+"First.Button.Login"                = "ログイン";
+
+// MARK: SMS authentication screen
+
+"SMSAuthen.String.001"        = "新規登録";
+"SMSAuthen.String.002"        = "アカウントをお持ちの方";
+"SMSAuthen.String.Title"      = "SMS認証";
+"SMSAuthen.String.003"        = "安全なご利用のため、携帯電話のSMS(ショートメッセージ)を利用して認証を行います";
+"SMSAuthen.String.004"        = "携帯電話番号(ハイフンなし)";
+"SMSAuthen.String.005"        = "SMSに電話番号を送信";
+"Completion.Of.Registration"  = "登録完了";
+"SMSAuthen.NotEmpty"          = "エラー：入力してください。";
+
+// MARK: OTP authentication screen
+
+"OTPAuthen.String.Title"         = "認証番号";
+"OTPAuthen.String.Desc"          = "SMS(ショートメッセージ)で送られてきた4桁の番号を入力してください";
+"OTPAuthen.Field.Content"        = "認証番号(4桁)";
+"OTPAuthen.Field.PlaceHolder"    = "数字4桁を入力";
+"OTPAuthen.Button.Verify"        = "認証番号を送信";
+"OTPAuthen.Popup.message"        = "しました";
+"OTPAuthen.NotEmpty"             = "エラー：入力してください。";
+
+// MARK: Recover account screen
+
+"RecoverAccount.String.001"        = "アカウント復旧";
+"RecoverAccount.String.002"        = "パスワードを入力してください";
+"RecoverAccount.String.003"        = "アカウントを復旧する";
+"RecoverAccount.String.004"        = "パスワードが異なります";
+"RecoverAccount.Popup.Completed.001"        = "アカウント復旧完了";
+"RecoverAccount.Popup.Completed.002"        = "説明テキストが入ります説明テキストが入ります説明テキストが入ります";
+
+// MARK: Notification setting screen
+
+"NotifiSetting.String.001"        = "通知設定";
+"NotifiSetting.String.002"        = "プッシュ通知";
+
+// MARK: Home screen
+
+"Home.String.001"        = "ロゴ";
+"Home.String.002"        = "お知らせ";
+"Home.String.003"        = "すべてを見る";
+"Home.String.004"        = "フリーマガジン";
+"Home.String.005"        = "動画";
+"Home.String.006"        = "プレゼント";
+
+// MARK: Video screen
+
+"Video.String.001"        = "動画一覧";
+"Video.String.002"        = "チャンネル一覧";
+"Video.String.003"        = "ランキング";
+"Video.String.004"        = "お気に入り動画";
+"Video.String.005"        = "お気に入り";
+"Video.Tab.VideoList"     = "動画一覧";
+"Video.ChannelList.Title" = "チャンネル";
+
+// MARK: Gift screen
+
+"Gift.String.001"           = "プレゼント一覧";
+"Gift.String.Point"         = "ポイント";
+"Not.Enough.Points"         = "ポイントが\n不足しています";
+"Gift.String.Point.Header"  = "ポイント別";
+"Gift.Label.Subscriber"     = "雑誌購読者プレゼント";
+"Gift.Label.Member"         = "アプリ会員プレゼント";
+
+// MARK: Magazine screen
+
+"Magazine.String.Title"             = "フリーマガジン";
+"Magazine.String.Tab.All"           = "すべて";
+"Magazine.String.Tab.Ranking"       = "ランキング";
+"Magazine.String.Tab.Favourite"     = "お気に入り";
+"Magazine.String.Point"             = "ポイント";
+"Magazine.GrantPoint.Message"       = "取得しました";
+"Magazine.String.Close"             = "閉じる";
+
+// MARK: - Change user information
+
+"Category.Tags"                 = "カテゴリー";
+"Undecided"                     = "未定";
+"Subscription.Info.Title"       = "定期購読";
+"Subscription.Info.Signed"      = "契約中";
+"Subscription.Info.Notsigned"   = "未契約";
+"Subscription.Term.Note1"       = "定期購読の注意事項";
+"Subscription.Term.Note2"       = "をお読みください";
+"Subscription.Note.For.Signed"       = "定期購読を解約する";
+"Subscription.Note.For.Notsigned"    = "上記に同意して定期購読を申込む";
+"Subscription.Apply.Title"      = "申込む";
+"Subscription.Cancel.Title"     = "解約する";
+
+// MARK: - Change personal information
+
+"Change.Personal.Information"   = "本人情報変更";
+"Change"                        = "変更する";
+"Please.Enter.Your.Name"        = "氏名を入力してください。";
+"Please.Enter.Your.Kana.Name"   = "氏名(かな)を入力してください。";
+"Please.Enter.A.Phone.Number"   = "電話番号を入力してください。";
+"Please.Enter.Your.Zipcode"     = "郵便番号を入力してください。";
+"Select.The.Prefecture"         = "都道府県を選択してください。";
+"Please.Enter.A.City.Name"      = "市区町村名を入力してください。";
+"Please.Enter.The.Address.Name"     = "番地を入力してください。";
+"Please.Enter.The.Building.Name"    = "ビル名を入力してください。";
+"The.Postal.Code.Must.Be.X.Characters"          = "郵便番号は%@文字でなければなりません。";
+
+// MARK: Unregister screen
+"Unregister.String.Title"       = "退会";
+"Unregister.String.Verify"      = "退会手続きの前にご確認ください";
+"Unregister.String.Message"     = "会員を退会された場合には、現在保存されている購入履歴やお届け先等の情報はすべて削除されます。また、貯まっているポイントは全て失効しますが、再入会いただいた場合、退会時のポイントは復活します。";
+"Unregister.Button.String"      = "退会する";
+"Unregister.Popup.Title"        = "本当に退会しますか？";
+"Unregister.Popup.Message"      = "退会する場合はOKボタンを押してください";
+"Unregister.Popup.Cancel"       = "キャンセル";

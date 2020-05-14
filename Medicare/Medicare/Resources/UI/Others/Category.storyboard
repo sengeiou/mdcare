@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nVW-vJ-g9c">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category Setting View Controller-->
+        <scene sceneID="DrR-6M-HFj">
+            <objects>
+                <viewController storyboardIdentifier="CategorySettingViewController" id="nVW-vJ-g9c" customClass="CategorySettingViewController" customModule="Medicare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I3k-09-chi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skk-yN-Ojo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-Kx-3sp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="577" id="mt8-nz-m1o"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HaK-y2-ETO">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2s-4Q-D14" customClass="CommonButton" customModule="Medicare" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="seS-eJ-cS5"/>
+                                        </constraints>
+                                        <state key="normal" title="登録する"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="E2s-4Q-D14" secondAttribute="bottom" constant="20" id="3ZR-ti-epq"/>
+                                    <constraint firstItem="bqf-Kx-3sp" firstAttribute="top" secondItem="skk-yN-Ojo" secondAttribute="top" id="7xt-oG-9JA"/>
+                                    <constraint firstItem="bqf-Kx-3sp" firstAttribute="centerX" secondItem="skk-yN-Ojo" secondAttribute="centerX" id="BLg-ZU-QJO"/>
+                                    <constraint firstItem="E2s-4Q-D14" firstAttribute="leading" secondItem="skk-yN-Ojo" secondAttribute="leading" constant="20" id="GFH-hB-Twm"/>
+                                    <constraint firstItem="bqf-Kx-3sp" firstAttribute="leading" secondItem="skk-yN-Ojo" secondAttribute="leading" id="aLO-Ty-08a"/>
+                                    <constraint firstItem="E2s-4Q-D14" firstAttribute="centerX" secondItem="bqf-Kx-3sp" secondAttribute="centerX" id="r3f-Cx-ege"/>
+                                    <constraint firstItem="E2s-4Q-D14" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bqf-Kx-3sp" secondAttribute="bottom" constant="20" id="ws8-PQ-dj6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="skk-yN-Ojo" firstAttribute="leading" secondItem="iSM-uX-wYi" secondAttribute="leading" id="1TP-gZ-Jf7"/>
+                            <constraint firstItem="skk-yN-Ojo" firstAttribute="centerX" secondItem="iSM-uX-wYi" secondAttribute="centerX" id="Vmp-wy-id3"/>
+                            <constraint firstItem="skk-yN-Ojo" firstAttribute="top" secondItem="iSM-uX-wYi" secondAttribute="top" id="hKW-zJ-Dab"/>
+                            <constraint firstItem="iSM-uX-wYi" firstAttribute="bottom" secondItem="skk-yN-Ojo" secondAttribute="bottom" id="zof-7b-nIS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iSM-uX-wYi"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="bqf-Kx-3sp" id="XVA-g8-51V"/>
+                        <outlet property="collectionViewConstraintHeight" destination="mt8-nz-m1o" id="m8o-51-bzP"/>
+                        <outlet property="registerButton" destination="E2s-4Q-D14" id="MTO-IU-9Qe"/>
+                        <outlet property="shadowView" destination="skk-yN-Ojo" id="pg5-dQ-P3p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efm-d2-B9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="99.400299850074973"/>
+        </scene>
+    </scenes>
+</document>

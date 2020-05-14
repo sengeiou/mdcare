@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Fw-ah-4jA">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Point View Controller-->
+        <scene sceneID="okM-u9-JIC">
+            <objects>
+                <viewController storyboardIdentifier="PointViewController" id="9Fw-ah-4jA" customClass="PointViewController" customModule="Medicare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BQI-Ja-HPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CI6-1f-za5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CI6-1f-za5" firstAttribute="centerX" secondItem="Kyf-vb-7ZD" secondAttribute="centerX" id="Oov-pp-aI1"/>
+                            <constraint firstAttribute="bottom" secondItem="CI6-1f-za5" secondAttribute="bottom" id="U9g-Lz-lTc"/>
+                            <constraint firstItem="CI6-1f-za5" firstAttribute="top" secondItem="Kyf-vb-7ZD" secondAttribute="top" id="eip-Sq-jgu"/>
+                            <constraint firstItem="CI6-1f-za5" firstAttribute="leading" secondItem="Kyf-vb-7ZD" secondAttribute="leading" id="nXb-gR-0eB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kyf-vb-7ZD"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="CI6-1f-za5" id="1m6-ex-5P6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnB-x0-4hQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="252"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="EVi-9d-w75">
+            <objects>
+                <viewController storyboardIdentifier="QRScannerViewController" id="iTG-iK-MAc" customClass="QRScannerViewController" customModule="Medicare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IaC-VK-EeN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eul-Wh-3ZJ" customClass="QRScannerView" customModule="Medicare" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Eul-Wh-3ZJ" firstAttribute="centerX" secondItem="VJG-Ku-dNh" secondAttribute="centerX" id="Fad-qH-mo9"/>
+                            <constraint firstAttribute="bottom" secondItem="Eul-Wh-3ZJ" secondAttribute="bottom" id="Hyc-0P-JRZ"/>
+                            <constraint firstItem="Eul-Wh-3ZJ" firstAttribute="top" secondItem="VJG-Ku-dNh" secondAttribute="top" id="UBi-is-5ma"/>
+                            <constraint firstItem="Eul-Wh-3ZJ" firstAttribute="leading" secondItem="VJG-Ku-dNh" secondAttribute="leading" id="VoT-l6-750"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VJG-Ku-dNh"/>
+                    </view>
+                    <connections>
+                        <outlet property="scannerView" destination="Eul-Wh-3ZJ" id="Py8-Ki-pNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PiR-5W-gU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="251"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="MagazineTabCollectionViewCell" customModule="Medicare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="57"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytL-Oa-Psr">
+                        <rect key="frame" x="10" y="0.0" width="125" height="57"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-cO-p6J">
+                                <rect key="frame" x="0.0" y="13.5" width="125" height="30"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ezg-cO-p6J" firstAttribute="leading" secondItem="ytL-Oa-Psr" secondAttribute="leading" id="Jor-8U-9zI"/>
+                            <constraint firstItem="Ezg-cO-p6J" firstAttribute="centerY" secondItem="ytL-Oa-Psr" secondAttribute="centerY" id="PAG-cy-NW3"/>
+                            <constraint firstAttribute="trailing" secondItem="Ezg-cO-p6J" secondAttribute="trailing" id="leP-pW-gy0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ytL-Oa-Psr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8DV-je-arD"/>
+                <constraint firstAttribute="trailing" secondItem="ytL-Oa-Psr" secondAttribute="trailing" id="Bi2-zT-VqH"/>
+                <constraint firstItem="ytL-Oa-Psr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="PLq-mp-xeQ"/>
+                <constraint firstAttribute="bottom" secondItem="ytL-Oa-Psr" secondAttribute="bottom" id="hdT-PN-KTr"/>
+            </constraints>
+            <size key="customSize" width="135" height="57"/>
+            <connections>
+                <outlet property="bgView" destination="ytL-Oa-Psr" id="3zB-sb-f6i"/>
+                <outlet property="btnChannel" destination="Ezg-cO-p6J" id="RAC-O0-aOc"/>
+                <outlet property="paddingLeftConstraint" destination="PLq-mp-xeQ" id="rC6-UJ-9OS"/>
+            </connections>
+            <point key="canvasLocation" x="199.27536231884059" y="104.12946428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

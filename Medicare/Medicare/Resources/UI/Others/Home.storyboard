@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="b2W-6j-xOj">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="eAu-Nv-lTd" customClass="HomeViewController" customModule="Medicare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uqd-Ex-gkw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XWC-io-fTx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="dsB-WT-iiT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XWC-io-fTx" secondAttribute="bottom" id="DZK-rT-JaO"/>
+                            <constraint firstItem="XWC-io-fTx" firstAttribute="leading" secondItem="uqd-Ex-gkw" secondAttribute="leading" id="ObY-4t-Zzc"/>
+                            <constraint firstAttribute="trailing" secondItem="XWC-io-fTx" secondAttribute="trailing" id="PUF-YC-rrU"/>
+                            <constraint firstItem="dsB-WT-iiT" firstAttribute="leading" secondItem="tsG-ql-Ezu" secondAttribute="leading" id="PVz-Sg-AHx"/>
+                            <constraint firstItem="dsB-WT-iiT" firstAttribute="top" secondItem="tsG-ql-Ezu" secondAttribute="top" id="TdN-jJ-HRU"/>
+                            <constraint firstItem="XWC-io-fTx" firstAttribute="top" secondItem="uqd-Ex-gkw" secondAttribute="top" id="W47-g2-Tef"/>
+                            <constraint firstItem="tsG-ql-Ezu" firstAttribute="trailing" secondItem="dsB-WT-iiT" secondAttribute="trailing" id="bIX-iF-iwx"/>
+                            <constraint firstAttribute="bottom" secondItem="dsB-WT-iiT" secondAttribute="bottom" id="p5B-Ku-kDI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tsG-ql-Ezu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hhZ-A3-irr"/>
+                    <connections>
+                        <outlet property="tblView" destination="dsB-WT-iiT" id="VOQ-vz-AL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEk-wy-LHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="117"/>
+        </scene>
+    </scenes>
+</document>

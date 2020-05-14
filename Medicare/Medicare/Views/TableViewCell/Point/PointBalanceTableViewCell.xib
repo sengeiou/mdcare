@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="104" id="7xJ-aW-Swc" customClass="PointBalanceTableViewCell" customModule="Medicare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xJ-aW-Swc" id="N1g-c7-t05">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CP-eq-RNv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VMo-im-8Up">
+                                <rect key="frame" x="20" y="8" width="374" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxj-Lf-sEV">
+                                        <rect key="frame" x="0.0" y="22.5" width="43" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="kWU-Kb-uGR"/>
+                                            <constraint firstAttribute="width" secondItem="Kxj-Lf-sEV" secondAttribute="height" multiplier="1:1" id="suO-Ko-uqU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ポイント残高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeY-S4-dtP">
+                                        <rect key="frame" x="59" y="34" width="239.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,000 P" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3h-Pm-Feo">
+                                        <rect key="frame" x="314.5" y="34" width="59.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VMo-im-8Up" firstAttribute="leading" secondItem="6CP-eq-RNv" secondAttribute="leading" constant="20" id="OGC-J5-Rwh"/>
+                            <constraint firstItem="VMo-im-8Up" firstAttribute="top" secondItem="6CP-eq-RNv" secondAttribute="top" constant="8" id="PKc-1o-zT9"/>
+                            <constraint firstItem="VMo-im-8Up" firstAttribute="centerX" secondItem="6CP-eq-RNv" secondAttribute="centerX" id="RiY-2l-WyV"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84" id="ldd-cN-ZEo"/>
+                            <constraint firstItem="VMo-im-8Up" firstAttribute="centerY" secondItem="6CP-eq-RNv" secondAttribute="centerY" id="wH0-cD-TzT"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxv-7V-K97" customClass="CommonButton" customModule="Medicare" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="124" width="414" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ILL-Jo-SwX"/>
+                        </constraints>
+                        <state key="normal" title="QRコードからポイントを取得する"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6CP-eq-RNv" firstAttribute="top" secondItem="N1g-c7-t05" secondAttribute="top" id="07t-8Z-q85"/>
+                    <constraint firstItem="xxv-7V-K97" firstAttribute="leading" secondItem="6CP-eq-RNv" secondAttribute="leading" id="3IT-Rf-3Jl"/>
+                    <constraint firstItem="xxv-7V-K97" firstAttribute="centerX" secondItem="6CP-eq-RNv" secondAttribute="centerX" id="7Pn-st-8jf"/>
+                    <constraint firstAttribute="bottom" secondItem="6CP-eq-RNv" secondAttribute="bottom" id="Ecf-Hd-uQ2"/>
+                    <constraint firstItem="6CP-eq-RNv" firstAttribute="leading" secondItem="N1g-c7-t05" secondAttribute="leading" id="YRO-1d-h75"/>
+                    <constraint firstItem="6CP-eq-RNv" firstAttribute="centerX" secondItem="N1g-c7-t05" secondAttribute="centerX" id="mMo-yB-TDn"/>
+                    <constraint firstItem="xxv-7V-K97" firstAttribute="top" secondItem="6CP-eq-RNv" secondAttribute="bottom" constant="20" id="tfB-Wt-tnT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="6CP-eq-RNv" id="fgV-PL-6Xa"/>
+                <outlet property="pLabel" destination="Kxj-Lf-sEV" id="K1B-Q6-v9g"/>
+                <outlet property="qrCodeButton" destination="xxv-7V-K97" id="nEk-lF-gCs"/>
+                <outlet property="stackView" destination="VMo-im-8Up" id="sRf-HP-nAH"/>
+                <outlet property="titleLabel" destination="JeY-S4-dtP" id="V83-MY-9vd"/>
+                <outlet property="valueLabel" destination="a3h-Pm-Feo" id="UFI-NE-naA"/>
+            </connections>
+            <point key="canvasLocation" x="-212.80000000000001" y="116.94152923538232"/>
+        </tableViewCell>
+    </objects>
+</document>

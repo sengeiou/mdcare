@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shopping View Controller-->
+        <scene sceneID="XEQ-qp-uDU">
+            <objects>
+                <viewController storyboardIdentifier="ShoppingViewController" id="RsY-UL-Pd9" customClass="ShoppingViewController" customModule="めりぃさん" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0GN-cM-DaE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMU-Mu-vYa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MzR-75-Nrl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                        <segments>
+                                            <segment title="商品一覧"/>
+                                            <segment title="カート"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MzR-75-Nrl" secondAttribute="bottom" id="0bu-c5-lzf"/>
+                                    <constraint firstItem="MzR-75-Nrl" firstAttribute="top" secondItem="nMU-Mu-vYa" secondAttribute="top" id="gxp-Yh-kTG"/>
+                                    <constraint firstItem="MzR-75-Nrl" firstAttribute="leading" secondItem="nMU-Mu-vYa" secondAttribute="leading" id="iB8-nF-PKS"/>
+                                    <constraint firstAttribute="height" constant="36" id="j6E-qY-ObJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="MzR-75-Nrl" secondAttribute="trailing" id="lav-B4-vPT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heS-Ck-0UW">
+                                <rect key="frame" x="0.0" y="36" width="375" height="631"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nMU-Mu-vYa" firstAttribute="top" secondItem="gbN-Fp-VMo" secondAttribute="top" id="0dd-uv-DVw"/>
+                            <constraint firstAttribute="trailing" secondItem="nMU-Mu-vYa" secondAttribute="trailing" id="9rr-se-3Sc"/>
+                            <constraint firstItem="heS-Ck-0UW" firstAttribute="top" secondItem="nMU-Mu-vYa" secondAttribute="bottom" id="Cfm-Gy-PJ4"/>
+                            <constraint firstItem="heS-Ck-0UW" firstAttribute="leading" secondItem="gbN-Fp-VMo" secondAttribute="leading" id="MsS-BM-q2r"/>
+                            <constraint firstAttribute="bottom" secondItem="heS-Ck-0UW" secondAttribute="bottom" id="Wof-Pm-rLt"/>
+                            <constraint firstItem="gbN-Fp-VMo" firstAttribute="trailing" secondItem="heS-Ck-0UW" secondAttribute="trailing" id="wlT-JQ-AKX"/>
+                            <constraint firstItem="nMU-Mu-vYa" firstAttribute="leading" secondItem="0GN-cM-DaE" secondAttribute="leading" id="y5t-95-hWc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gbN-Fp-VMo"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="heS-Ck-0UW" id="4Et-SV-A4j"/>
+                        <outlet property="segmentTab" destination="MzR-75-Nrl" id="wtI-Yq-Nev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIy-lq-pLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="118"/>
+        </scene>
+    </scenes>
+</document>

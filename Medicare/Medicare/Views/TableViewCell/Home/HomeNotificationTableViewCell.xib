@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeNotificationTableViewCellID" rowHeight="119" id="KGk-i7-Jjw" customClass="HomeNotificationTableViewCell" customModule="Medicare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIf-YA-h8P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cF7-lu-5Rv"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="□□□□□□□□□□□□□□のお知らせ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alr-j2-Ogr">
+                        <rect key="frame" x="29" y="49.5" width="245" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_icon" translatesAutoresizingMaskIntoConstraints="NO" id="zdx-z8-zlY">
+                        <rect key="frame" x="289" y="55" width="6" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="KDU-HS-LKq"/>
+                            <constraint firstAttribute="height" constant="9" id="oWY-nR-MDi"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2u2-Rf-VJP">
+                        <rect key="frame" x="0.0" y="118" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ynz-ch-u6c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="2u2-Rf-VJP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="65f-SN-RlY"/>
+                    <constraint firstAttribute="bottom" secondItem="2u2-Rf-VJP" secondAttribute="bottom" id="76D-UU-OU2"/>
+                    <constraint firstItem="zdx-z8-zlY" firstAttribute="leading" secondItem="alr-j2-Ogr" secondAttribute="trailing" constant="15" id="Eao-Qk-Vbj"/>
+                    <constraint firstAttribute="trailing" secondItem="2u2-Rf-VJP" secondAttribute="trailing" id="GKS-G3-FIg"/>
+                    <constraint firstItem="LIf-YA-h8P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JAg-vD-QcB"/>
+                    <constraint firstAttribute="trailing" secondItem="LIf-YA-h8P" secondAttribute="trailing" id="NV6-aX-FJI"/>
+                    <constraint firstAttribute="trailing" secondItem="zdx-z8-zlY" secondAttribute="trailing" constant="25" id="Rof-4e-KZ1"/>
+                    <constraint firstItem="zdx-z8-zlY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="and-BL-9aI"/>
+                    <constraint firstItem="alr-j2-Ogr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="bJG-ej-uGE"/>
+                    <constraint firstItem="alr-j2-Ogr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s0u-Ix-N4W"/>
+                    <constraint firstItem="LIf-YA-h8P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sKi-Rw-uee"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbValue" destination="alr-j2-Ogr" id="xPP-UG-vQI"/>
+                <outlet property="separatorBottomView" destination="2u2-Rf-VJP" id="vSb-jg-Yfe"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="126.89732142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="accessory_icon" width="8" height="11"/>
+    </resources>
+</document>

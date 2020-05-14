@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoHeaderView" customModule="めりぃさん" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_channel_icon" translatesAutoresizingMaskIntoConstraints="NO" id="A9R-vr-esV">
+                    <rect key="frame" x="13" y="10" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="4eX-8T-VoJ"/>
+                        <constraint firstAttribute="height" constant="37" id="5U8-A5-5dZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO6-gE-rwM">
+                    <rect key="frame" x="62" y="18" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp4-xr-8XI">
+                    <rect key="frame" x="13" y="62" width="349" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Fp4-xr-8XI" secondAttribute="bottom" constant="10" id="ILQ-NC-Zb6"/>
+                <constraint firstItem="A9R-vr-esV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="LFa-JG-3rE"/>
+                <constraint firstItem="aO6-gE-rwM" firstAttribute="centerY" secondItem="A9R-vr-esV" secondAttribute="centerY" id="Ug2-bP-CqG"/>
+                <constraint firstItem="A9R-vr-esV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="iI4-xQ-Rz4"/>
+                <constraint firstItem="Fp4-xr-8XI" firstAttribute="top" secondItem="A9R-vr-esV" secondAttribute="bottom" constant="15" id="iiP-dE-CXo"/>
+                <constraint firstItem="Fp4-xr-8XI" firstAttribute="leading" secondItem="A9R-vr-esV" secondAttribute="leading" id="lOt-81-naP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fp4-xr-8XI" secondAttribute="trailing" constant="13" id="oV2-Vh-UKR"/>
+                <constraint firstItem="aO6-gE-rwM" firstAttribute="leading" secondItem="A9R-vr-esV" secondAttribute="trailing" constant="12" id="qVd-W3-F1I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgChannel" destination="A9R-vr-esV" id="2uu-EH-QOV"/>
+                <outlet property="lbDesc" destination="Fp4-xr-8XI" id="QNy-p8-2iw"/>
+                <outlet property="lbTitle" destination="aO6-gE-rwM" id="xTV-s6-bRH"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-153.37331334332833"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video_channel_icon" width="37" height="37"/>
+    </resources>
+</document>

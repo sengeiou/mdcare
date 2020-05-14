@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeGiftTableViewCellID" rowHeight="304" id="aeH-LE-w8t" customClass="HomeGiftTableViewCell" customModule="Medicare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aeH-LE-w8t" id="RjD-ik-z8o">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjh-Rm-hyi">
+                        <rect key="frame" x="8" y="5" width="304" height="294"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqg-9Y-2N1">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="294"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="QZ9-mJ-Hdr">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="174.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="QZ9-mJ-Hdr" secondAttribute="height" multiplier="359:206" id="TNV-rV-UW4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkD-w1-4DK">
+                                        <rect key="frame" x="15" y="184.5" width="56" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="COL-Mf-esS"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa7-dx-uOp">
+                                        <rect key="frame" x="15" y="213.5" width="274" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k37-pM-Rax">
+                                        <rect key="frame" x="15" y="244" width="274" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="PkD-w1-4DK" firstAttribute="leading" secondItem="uqg-9Y-2N1" secondAttribute="leading" constant="15" id="2tJ-RK-aRD"/>
+                                    <constraint firstItem="Wa7-dx-uOp" firstAttribute="top" secondItem="PkD-w1-4DK" secondAttribute="bottom" constant="5" id="9lr-1m-WVP"/>
+                                    <constraint firstAttribute="trailing" secondItem="k37-pM-Rax" secondAttribute="trailing" constant="15" id="NsD-aF-gze"/>
+                                    <constraint firstItem="QZ9-mJ-Hdr" firstAttribute="top" secondItem="uqg-9Y-2N1" secondAttribute="top" id="PXo-Tq-CeJ"/>
+                                    <constraint firstItem="PkD-w1-4DK" firstAttribute="top" secondItem="QZ9-mJ-Hdr" secondAttribute="bottom" constant="10" id="UBG-s9-It2"/>
+                                    <constraint firstAttribute="trailing" secondItem="QZ9-mJ-Hdr" secondAttribute="trailing" id="XDA-qp-sAx"/>
+                                    <constraint firstItem="Wa7-dx-uOp" firstAttribute="leading" secondItem="uqg-9Y-2N1" secondAttribute="leading" constant="15" id="enV-3l-SBF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wa7-dx-uOp" secondAttribute="trailing" constant="15" id="gKB-6W-lJs"/>
+                                    <constraint firstAttribute="bottom" secondItem="k37-pM-Rax" secondAttribute="bottom" constant="15" id="q9J-eS-JHb"/>
+                                    <constraint firstItem="QZ9-mJ-Hdr" firstAttribute="leading" secondItem="uqg-9Y-2N1" secondAttribute="leading" id="toA-R8-bsJ"/>
+                                    <constraint firstItem="k37-pM-Rax" firstAttribute="leading" secondItem="uqg-9Y-2N1" secondAttribute="leading" constant="15" id="ud0-EY-8w7"/>
+                                    <constraint firstItem="k37-pM-Rax" firstAttribute="top" secondItem="Wa7-dx-uOp" secondAttribute="bottom" constant="10" id="wqN-gE-qoP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uqg-9Y-2N1" firstAttribute="leading" secondItem="tjh-Rm-hyi" secondAttribute="leading" id="91t-12-i1m"/>
+                            <constraint firstItem="uqg-9Y-2N1" firstAttribute="top" secondItem="tjh-Rm-hyi" secondAttribute="top" id="LZp-YU-ccn"/>
+                            <constraint firstAttribute="bottom" secondItem="uqg-9Y-2N1" secondAttribute="bottom" id="Xiu-HM-ksO"/>
+                            <constraint firstAttribute="trailing" secondItem="uqg-9Y-2N1" secondAttribute="trailing" id="ePG-Vw-hAu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tjh-Rm-hyi" firstAttribute="leading" secondItem="RjD-ik-z8o" secondAttribute="leading" constant="8" id="ctx-Mp-K9F"/>
+                    <constraint firstItem="tjh-Rm-hyi" firstAttribute="top" secondItem="RjD-ik-z8o" secondAttribute="top" constant="5" id="oXh-vl-xsJ"/>
+                    <constraint firstAttribute="bottom" secondItem="tjh-Rm-hyi" secondAttribute="bottom" constant="5" id="qFF-tN-B6k"/>
+                    <constraint firstAttribute="trailing" secondItem="tjh-Rm-hyi" secondAttribute="trailing" constant="8" id="zrJ-kM-r49"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Ihj-q2-aIZ"/>
+            <connections>
+                <outlet property="btnLabel" destination="PkD-w1-4DK" id="qwq-M0-Rlj"/>
+                <outlet property="lbSubTitle" destination="k37-pM-Rax" id="QpF-dD-6md"/>
+                <outlet property="lbTitle" destination="Wa7-dx-uOp" id="pqv-Zq-oMu"/>
+                <outlet property="thumbnail" destination="QZ9-mJ-Hdr" id="bUh-EE-K4S"/>
+                <outlet property="wrapperView" destination="tjh-Rm-hyi" id="73e-um-p3k"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="188.83928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="video_thumbnail" width="338" height="187"/>
+    </resources>
+</document>
